@@ -3,7 +3,7 @@
      "connector.class":"com.mongodb.kafka.connect.MongoSinkConnector",
      "tasks.max":"1",
      "topics":"dbserver1.inventory.customers",
-     "connection.uri":"mongodb://mongodb:dbz@mongodb2:27017",
+     "connection.uri":"mongodb://debezium:dbz@mongodb:27017",
      "database":"inventory",
      "collection":"customers",
      "key.converter": "org.apache.kafka.connect.storage.StringConverter",
