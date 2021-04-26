@@ -1,1 +1,4 @@
 FROM debezium/connect:1.5
+
+RUN mkdir -p /usr/local/share/kafka/plugins/
+COPY --chown=kafka:kafka mongo-kafka-connect-1.5.0-all.jar /usr/local/share/kafka/plugins/
