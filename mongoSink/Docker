@@ -2,5 +2,5 @@ FROM debezium/connect:1.5
 
 #$KAFKA_CONNECT_PLUGINS_DIR
 #RUN mkdir -p /usr/local/share/kafka/plugins/
-#RUN mkdir $KAFKA_CONNECT_PLUGINS_DIR/mongo-sink
+RUN mkdir $KAFKA_CONNECT_PLUGINS_DIR/mongo-sink
 COPY --chown=kafka:kafka mongo-kafka-connect-1.5.0-all.jar $KAFKA_CONNECT_PLUGINS_DIR/mongo-sink
